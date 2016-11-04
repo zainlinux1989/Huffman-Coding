@@ -293,7 +293,7 @@ void Huffman::decompressFile(const string& fileName)
     }
     
     // decompress file 
-    string outputFileName=fileName.substr(0,fileName.length()-3)+"_N.8b";
+    string outputFileName=fileName.substr(0,fileName.length()-4)+"_N.8b";
     ofstream outputFile;
     outputFile.open(outputFileName.c_str(),ios::out);
     
